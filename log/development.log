@@ -1894,3 +1894,180 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 343ms (Views: 327.9ms | ActiveRecord: 12.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:09:43 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  [1m[36mTweeet Load (1.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (119.7ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.4ms)
+  Rendered tweeets/index.html.erb within layouts/application (148.4ms)
+Completed 200 OK in 11142ms (Views: 11064.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:10:24 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (21.8ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.7ms)
+  Rendered tweeets/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 124ms (Views: 119.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:10:26 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.7ms)
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (28.0ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 150ms (Views: 145.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-17 20:10:48 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (170.9ms)
+Completed 200 OK in 246ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:13:05 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  [1m[36mTweeet Load (2.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (190.2ms)
+  Rendered tweeets/_who-to-follow.html.erb (0.9ms)
+  Rendered tweeets/index.html.erb within layouts/application (217.7ms)
+Completed 200 OK in 1660ms (Views: 1564.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-17 20:13:12 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (322.3ms)
+Completed 200 OK in 401ms (Views: 388.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-17 20:13:26 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QTCplAApb4bEORNz5iearErC8VRQYnOIoQGgmpM1j//rDc6/UgNrLFdGZIE48+kUV1wExQ5WiRTc0U1Ksv7mqw==", "user"=>{"email"=>"georgegeorgescu2000@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "georgegeorgescu2000@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2021-04-17 17:13:26.751279"], ["last_sign_in_at", "2021-04-17 14:16:03.555650"], ["sign_in_count", 5], ["updated_at", "2021-04-17 17:13:26.753682"], ["id", 1]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 312ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:13:26 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweeets" WHERE "tweeets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweeets/_profile.html.erb (52.6ms)
+  Rendered tweeets/_form.html.erb (21.7ms)
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (53.7ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 221ms (Views: 210.6ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/tweeets" for 127.0.0.1 at 2021-04-17 20:13:37 +0300
+Processing by TweeetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q74eLRlLl3O4jtbr219hLHsEBKmec9ehc9vySEP52Esle/isWoL9GbxyslZ3goAE5wlXBRGRFoaLKAv9hGYplA==", "tweeet"=>{"tweeet"=>"5th ceva"}, "commit"=>"Create Secret"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["tweeet", "5th ceva"], ["created_at", "2021-04-17 17:13:37.609896"], ["updated_at", "2021-04-17 17:13:37.609896"], ["user_id", 1]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 34ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:13:37 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweeets" WHERE "tweeets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweeets/_profile.html.erb (15.6ms)
+  Rendered tweeets/_form.html.erb (14.7ms)
+  [1m[36mTweeet Load (0.8ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (61.6ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.0ms)
+  Rendered tweeets/index.html.erb within layouts/application (87.2ms)
+Completed 200 OK in 175ms (Views: 151.8ms | ActiveRecord: 20.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-17 20:13:53 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1BL06mNCjGmays3GpiNrR2WJ6NzcDlrxbuGhhMSQ6Jpa1xJrIIvmA542qXsK/opv+YS7cFPsm9aWElgxAw8ZRQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-17 20:13:53 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trends.html.erb (0.8ms)
+  [1m[36mTweeet Load (3.9ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tweeets/_feed.html.erb (30.9ms)
+  Rendered tweeets/_who-to-follow.html.erb (1.1ms)
+  Rendered tweeets/index.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 158ms (Views: 144.8ms | ActiveRecord: 5.1ms)
+
+
