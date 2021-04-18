@@ -14,10 +14,10 @@ gem 'rails', '~> 5.1.4'
 #  gem 'sqlite3'
 # end
  
- group :production do
-   gem 'pg'
+# group :production do
+##   gem 'pg'
  end
-# gem 'sqlite3'
+#gem 'sqlite3'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
