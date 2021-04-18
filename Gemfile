@@ -17,7 +17,7 @@ gem 'rails', '~> 5.1.4'
  group :production do
    gem 'pg'
  end
-
+# gem 'sqlite3'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

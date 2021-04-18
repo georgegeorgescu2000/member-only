@@ -23,8 +23,16 @@
   		</div>
   		<div class="media-content">
   			<div class="content">
+			
+			  <% if user_signed_in? %>
   				<strong><%= tweeet.user.name %></strong><br />
   				<small><%= tweeet.user.username %></small><br/>
+				  <% else %>
+
+				<strong>Log in for user name</strong><br />
+  				<small> Anonymus</small><br/>
+
+			<% end %>
   				<p><%= tweeet.tweeet %></p>
   			</div>
         <% if user_signed_in? && current_user.id == tweeet.user_id %>
