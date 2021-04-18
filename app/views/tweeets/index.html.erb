@@ -1,11 +1,14 @@
 <section class="section">
   <div class="container">
+  <h1 style="background-color:DodgerBlue; color:white; font-size: 7em;; text-align:center">Blog despre secrete</h1>
     <div class="columns">
     	<% if user_signed_in? %>
     		<%= render 'profile' %>
     	<% else %>
        <% render 'trends' %>
       <% end %>
+
+     
 
        <%= render 'feed' %>
        <% render 'who-to-follow' %>

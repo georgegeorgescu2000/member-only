@@ -22,22 +22,22 @@
 			<div class="level is-mobile">
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="heading">Members</p>
+						<p class="heading">Posts</p>
 						<p class="title is-6"><%= current_user.tweeets.count %></p>
 					</div>
 				</div>
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="heading">Following</p>
-						<p class="title is-6">123</p>
+						<p class="heading">Total Posts</p>
+						<p class="title is-6"><%= Tweeet.all.count %></p>
 					</div>
 				</div>
 					<div class="level-item has-centered-text">
 					<div>
-						<p class="heading">Followers</p>
-						<p class="title is-6">465K</p>
+						<p class="heading">Total users</p>
+						<p class="title is-6"><%= User.all.count %></p>
 					</div>
-				</div>
+				</div> 
 			</div>
 		</div>
 	</nav>

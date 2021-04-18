@@ -13,13 +13,20 @@
   <% end %>
 
 
+
 <% @tweeets.each do | tweeet | %>
   <div class="box">
   	<article class="media">
   		<div class="media-left">
-  			<figure class="image is-64x64">
-  				<%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name) %>
-  			</figure>
+		  <% if user_signed_in? %>
+				<figure class="image is-64x64">
+						<%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name) %>
+				</figure>
+			  <% else %>
+			  	<figure class="image is-64x64">
+			  		<% gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name) %>
+	  			</figure>
+		<% end %>
   		</div>
   		<div class="media-content">
   			<div class="content">
